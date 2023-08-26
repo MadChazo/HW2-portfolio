@@ -4,58 +4,148 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Madison Chazo - Portfolio</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Rancho"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Oswald"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header id="top">
-      <img
-        src="assets/images/madison-witchhat.jpg"
-        alt="selfie of a young person with brown hair and glasses wearing a witch hat"
-        id="profile-image"
-      />
-      <h1>Madison Chazo</h1>
-      <!-- Want a line break between flex items -->
-      <div class="break"></div>
+    <header>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
-          <li>Work</li>
-          <li>Contact</li>
+          <li>&#x2022;</li>
+          <li><a href="#work">Work</a></li>
+          <li>&#x2022;</li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <div class="title">
+        <img
+          src="assets/images/madison-witchhat.jpg"
+          alt="selfie of a young person with brown hair and glasses wearing a witch hat"
+          id="profile-image"
+        />
+        <h1>Madison Chazo</h1>
+      </div>
     </header>
-    <article id="about">
-      <h2>About</h2>
-      <p>
-        Madison Chazo is a 24-year-old hobby developer living in Richmond,
-        Virginia. She started learning to code while at Cornell University,
-        where she studied biology before dropping out to pursue other things.
-        She is currently enrolled in the University of Richmond's coding boot
-        camp, where she is learning web development. Her current goal is to
-        eventually get a job as a programmer or developer.
-      </p>
-      <p>
-        Outside of coding, Madison enjoys making art, playing video games,
-        watching anime, and playing tabletop roleplaying games, among other
-        nerdy pursuits. She loves games and shows that combine fun mechanics
-        with meaningful storytelling. Some of her favorites include Baldur's
-        Gate, Mass Effect, Hollow Knight, "Steins;Gate," "Attack on Titan," and
-        "Castlevania." Her dream is to participate in the process of making a
-        video game.
-      </p>
-    </article>
-    <section id="work">
-      <h2>Work</h2>
-      <h3>Current Project</h3>
-      <h3>Past Work</h3>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <ul>
-        <li>Website</li>
-        <li>Email</li>
-        <li>GitHub</li>
-      </ul>
-    </section>
+    <main>
+      <article id="about">
+        <h2>About</h2>
+        <p>
+          Madison Chazo is a 24-year-old hobby developer living in Richmond,
+          Virginia. She started learning to code while in college, where she
+          studied biology before dropping out to pursue other things. She is
+          currently enrolled in the University of Richmond's coding boot camp,
+          where she is learning web development. Her current goal is to
+          eventually get a job as a programmer or developer.
+        </p>
+        <p>
+          Outside of coding, Madison enjoys making art, playing video games,
+          watching anime, and playing tabletop roleplaying games, among other
+          nerdy pursuits. She loves games and shows that combine fun mechanics
+          with meaningful storytelling. Some of her favorites include Baldur's
+          Gate, Mass Effect, Hollow Knight, <i>Steins;Gate</i>,
+          <i>Attack on Titan</i>, and <i>Castlevania</i>. Her dream is to
+          participate in the process of making a game.
+        </p>
+      </article>
+      <section id="work">
+        <h2>Work</h2>
+        <h3>Current Projects</h3>
+        <div id="current">
+          <figure>
+            <a href="https://www.madisonchazo.com"
+              ><img
+                src="assets/images/noun-work-in-progress.png"
+                alt="gears above loading bar"
+            /></a>
+            <figcaption>madisonchazo.com</figcaption>
+          </figure>
+          <!-- placeholder for future projects -->
+          <figure>
+            <a href="#"
+              ><img
+                src="assets/images/noun-work-in-progress.png"
+                alt="gears above loading bar"
+            /></a>
+            <figcaption>Current Project No. 2</figcaption>
+          </figure>
+          work in progress by Articon from
+          <a
+            href="https://thenounproject.com/browse/icons/term/work-in-progress/"
+            target="_blank"
+            title="work in progress Icons"
+            >Noun Project</a
+          >
+          (CC BY 3.0)
+        </div>
+        <h3>Past Work</h3>
+        <div id="past">
+          <figure>
+            <a href="https://madchazo.github.io/MP1-landing-page/"
+              ><img
+                src="assets/images/MP1-Screenshot.png"
+                alt="screenshot of website showing a header and an elephant drawing"
+            /></a>
+            <figcaption>Practice Website - ACME Corp. landing page</figcaption>
+          </figure>
+          <figure>
+            <a href="https://madchazo.github.io/HW1-code-refactor/"
+              ><img
+                src="assets/images/HW1-Screenshot.png"
+                alt="screenshot of website showing a header and a hero image of people collaborating in an office"
+            /></a>
+            <figcaption>Boot Camp Homework - Code Refactor</figcaption>
+            <!-- Placeholders for future projects -->
+          </figure>
+          <figure>
+            <a href="#"
+              ><img
+                src="assets/images/HW1-Screenshot.png"
+                alt="screenshot of website showing a header and a hero image of people collaborating in an office"
+            /></a>
+            <figcaption>Past Project No. 3</figcaption>
+          </figure>
+          <figure>
+            <a href="#"
+              ><img
+                src="assets/images/HW1-Screenshot.png"
+                alt="screenshot of website showing a header and a hero image of people collaborating in an office"
+            /></a>
+            <figcaption>Past Project No. 4</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+          <li>
+            <span class="cheader">Website</span><br /><a href="madisonchazo.com"
+              >madisonchazo.com</a
+            >
+          </li>
+          <li>
+            <span class="cheader">Email</span><br />madisonchazo@gmail.com
+          </li>
+          <li>
+            <span class="cheader">GitHub</span><br /><a
+              href="https://github.com/MadChazo"
+              >github.com/MadChazo</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>Created by Madison Chazo - August 2024</p>
+    </footer>
   </body>
 </html>

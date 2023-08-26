@@ -1,3 +1,8 @@
+:root {
+  --hgreen: #859c70;
+  --dkgreen: #174117;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,40 +12,129 @@ body {
   font-family: Garamond, "Times New Roman", Times, serif;
 }
 
+/* Header formatting */
 header {
-  height: 200px;
-  background-color: #a6c18c;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  height: 220px;
+  background-color: var(--hgreen);
 }
 
 h1 {
-  margin: 80px 0 0 0;
+  margin: 90px 0 0 0;
+  font-size: 60px;
+  color: var(--dkgreen);
+  font-family: Rancho, sans-serif;
 }
 
+#profile-image {
+  height: 130px;
+  border-radius: 50px;
+  border: solid blanchedalmond 5px;
+  margin: 60px 20px 0 0;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+/* Nav bar formatting */
 nav ul {
   display: flex;
+  position: fixed;
+  right: 0;
   list-style: none;
+  background-color: var(--hgreen);
+  padding: 0 20px 0 100%;
 }
 
 nav li {
   margin: 10px;
+  font-size: 24px;
+  font-family: Oswald, sans-serif;
+  color: blanchedalmond;
 }
 
 a {
   text-decoration: none;
 }
 
-/* Line break between flex items */
-.break {
-  height: 0;
-  flex-basis: 100%;
+nav a {
+  color: blanchedalmond;
 }
 
-#profile-image {
-  height: 100px;
-  border-radius: 50px;
-  border: solid;
-  margin: 40px 20px 0 0;
+/* Main body formatting */
+main {
+  margin: 10px 40px 10px 40px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 15px 0;
+  font-family: Oswald, sans-serif;
+}
+
+/* About section formatting */
+article p {
+  text-indent: 25px;
+  font-size: 20px;
+}
+
+article,
+section {
+  border-bottom: solid #174117;
+  padding: 10px;
+}
+
+/* Work section formatting */
+#current {
+  display: flex;
+  text-align: center;
+}
+#current img {
+  height: 200px;
+}
+
+#past figure:first-of-type img {
+  height: 200px;
+}
+
+/* Contact section formatting */
+#contact ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+#contact li {
+  padding: 10px;
+  background-color: blanchedalmond;
+  border-radius: 15px;
+  margin: 5px;
+  font-size: 20px;
+}
+
+#contact a {
+  color: var(--dkgreen);
+}
+
+/* Contact info headers */
+.cheader {
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Footer formatting */
+footer {
+  text-align: center;
+  background-color: var(--dkgreen);
+  height: 50px;
+}
+
+footer p {
+  padding: 15px 0 0 0;
+  color: blanchedalmond;
 }
