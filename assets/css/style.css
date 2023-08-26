@@ -38,6 +38,7 @@ h1 {
 }
 
 /* Nav bar formatting */
+
 nav ul {
   display: flex;
   position: fixed;
@@ -45,6 +46,7 @@ nav ul {
   list-style: none;
   background-color: var(--hgreen);
   padding: 0 20px 0 100%;
+  z-index: 1;
 }
 
 nav li {
@@ -87,18 +89,86 @@ section {
 }
 
 /* Work section formatting */
+h3 {
+  text-align: center;
+  font-size: 22px;
+}
+
+#work {
+  font-size: 20px;
+}
+
 #current {
   display: flex;
   text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 0 25px 0;
 }
+
+#current figure {
+  margin: 10px;
+  background-color: blanchedalmond;
+  border-radius: 15px;
+  padding: 7px;
+}
+
 #current img {
   height: 200px;
 }
 
-#past figure:first-of-type img {
-  height: 200px;
+.break {
+  width: 100%;
+  height: 10px;
 }
 
+#current p {
+  border-bottom: dotted 1px;
+  padding: 0 0 5px 0;
+  font-size: 15px;
+}
+
+#past {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#past figure:first-of-type img {
+  height: 400px;
+}
+#past figure:first-of-type img:hover {
+  opacity: 1;
+}
+
+#past img {
+  height: 300px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+#past img:hover {
+  opacity: 1;
+}
+
+#past figure {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  background-color: var(--hgreen);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#past figcaption {
+  position: absolute;
+  bottom: 25%;
+  padding: 5px;
+  background-color: blanchedalmond;
+}
 /* Contact section formatting */
 #contact ul {
   display: flex;
