@@ -157,6 +157,7 @@ h3 {
   background-color: var(--hgreen);
   border-radius: 50px;
   overflow: hidden;
+  border: solid 5px var(--hgreen);
 }
 
 #past figcaption {
